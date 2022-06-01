@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Ağ Papaqlı Hakerlər</title>  
+   <style>
+      .title{
+              color: white; 
+              margin-top: -20pt; 
+              font-size: 23pt; 
+              text-align: center;
+            }
+      .text{
+             color: white;
+             font-size: 16pt;
+             width: 90%;
+             padding: 10pt;
+           }
+      .href{
+             font-size: 16pt; 
+             border-radius: 10pt; 
+             background-color: white;
+           }
+      body{
+            background-color: #465362;
+         }
+    </style>
+</head>
+<body>
+  <button onclick = "func1()" class="href">Geri</button>
+  <script> function func1() { location.replace("səhifə2.html")}</script>
+
+  <div class="title">
+    <p><b>Ağ papaqlı Nüfuzetmə(Penetration) testlərinin icra olunma prosesləri</b> </p>
+  </div>
+
+  <div class="text">
+    Daxili nüfuz testlərini evinizin ətrafında gəzmək və çölə çıxmadan əvvəl heç bir pəncərə açmadığınızdan əmin olmaq kimi düşünün. 
+    Bu, demək olar ki, heç bir xərc tələb etməyən həssas bir tədbirdir. Burada bir çox təşkilat üçün faydalı olması lazım olan 7 addımlıq 
+    nüfuz test metodologiyasına nəzər salaq.
+  <ul>
+    <li><b style="color: black;">Şəbəkə Siyahısı və Xəritəçəkmə</b><b><i> (Network Enumeration And Mapping)</i></b> - Bu ilk addım bir şəbəkənin topologiyasını işləmək və hansı 
+      kompüterlərin ona qoşulduğunu və təklif etdikləri əməliyyat sistemi və xidmətlərini müəyyən etmək üçün port taramasını əhatə edir. 
+      Bəlkə də bu tapşırığı yerinə yetirmək üçün ən populyar vasitə bəzən Zenmap GUI vasitəsilə əldə edilən açıq mənbə Nmapdır..<br/><br/></li>
+
+    <li><b style="color: black;">Kəşfiyyat</b><b><i> (Reconnaissance)</i></b> - Bu, şəbəkədəki maşınlarla əlaqə qurmağı və işlədikləri tətbiqetmələr kimi məlumatların 
+      onlardan çıxarılmasını əhatə edir. Kəşfiyyat, məsələn, İT işçiləri və idarəedicilərinin adlarını öyrənmək üçün sınaqdan keçirilən 
+      təşkilat haqqında məlumat üçün Googling-i də cəlb edə bilər. Bu tip məlumatlar sosial mühəndislik və fişinq təlimləri üçün faydalı 
+      ola bilər.Bu cür insanlar üçün sosial media hesabları, parollarda tez-tez istifadə olunan ev heyvanları adları kimi məlumatları da 
+      aşkar edə bilər.<br/><br/></li>
+
+    <li><b style="color: black;">Şəbəkə qoxusu</b><b><i> (Network Sniffing)</i></b> - Şəbəkə qoxusu şəbəkə üzərindən keçən trafiği araşdırmaq və şifrələr və ya VoIP trafiki
+      daxil olmaqla şifrələnməmiş məlumatları axtarmaq üçün istifadə olunur. Şəbəkə qoxusu üçün de-fakto standart bir başqa açıq mənbə
+      vasitəsi olan Wireshark'dır.<br/><br/></li>
+    
+    <li><b style="color: black;">Zəiflik taraması</b><b><i> (Vulnerability Scanning)</i></b> - Bir zəiflik taraması, hər hansı bir maşında təhlükəli bir proqram təminatının və ya 
+      istifadə edilə bilən digər zəifliklərin olub olmadığını və ya hər hansı bir simsiz giriş nöqtəsinin açıq və ya zəif parollu olduğunu 
+      aşkar edə bilər. Məşhur açıq mənbə zəiflik vasitəsi OpenVASdır. Digər mütəxəssis skanerlər də saytlararası skript yazma (XSS) səhvləri 
+      kimi zəiflikləri axtarmaq üçün veb serverlərə yönəldilə bilər.<br/><br/></li>
+
+    <li><b style="color: black;">İstismar Başlanğıcı</b><b><i> (Exploit Launching)</i></b> - Nüfuz testinin bu mərhələsi bir sistemə nəzarət etmək üçün bilinən hər hansı 
+      zəiflikdən istifadə etməyə çalışır. Unutmamalıyıq ki, bir zəiflik taraması bir zəifliyi aşkar edə bilsə də, bütün zəifliklər uğurla 
+      istifadə edilə bilməz və ya ciddi bir pozuntuya səbəb ola bilər. Metasploit kimi bir istismar çərçivəsi, zəifliklərə uyğun gələ bilən 
+      hazır istismarların bir verilənlər bazasını və öz istismarlarını yaratmaq və işə salmaq üçün alətləri ehtiva edir.<br/><br/></li>
+
+    <li><b style="color: black;">Əlavə istismar</b><b><i> (Further Exploitation)</i></b> - Tək bir həssas sistem pozulduqdan sonra, şəbəkəyə daha da nüfuz etmək üçün bundan 
+      istifadə edə bilərsiniz. Məsələn, bir serverin parol sənədinə daxil olmaq mümkündürsə, parol qıran bir vasitə sonra dəyərli parollar 
+      əldə edə bilər. Kəşfiyyat mərhələsindən əldə edilən biliklərdən istifadə edərək, bu parollar daha çox sistemi pozmaq və daha çox məlumat 
+      əldə etmək üçün istifadə edilə bilər.<br/><br/></li>
+
+    <li><b style="color: black;">Fishing və Sosial Mühəndislik</b><b><i> (Phishing And Social Engineering)</i></b> - İşçiləri aldatmaqla hansı girişin mümkün olduğunu görmədən heç bir 
+      nüfuz testi tamamlanmır. Bu, phishing e-poçtlarını göndərmək və ya giriş məlumatlarını və ya digər məxfi məlumatları açıqlamaq üçün 
+      aldatmağa çalışmaq üçün sadəcə telefon etmək deməkdir.<br/><br/></li> 
+  </ul>
+  </div>
+</body>
+</html>
